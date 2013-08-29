@@ -1,0 +1,31 @@
+<h3>Servar: <%= server %>,<%= port%></h3>
+
+<form method="post" class="form-search">
+    <label for="inptKey">Kewords:</label>
+    <input id="inptKey" name="keyword" type="text"></input>
+    <input type="submit" value="Search" class="btn btn-primary"></input>
+    <a href="/manage/<%= port %>/random" class="btn btn-info">Get 100 Random Keys</a>
+</form>
+
+<table class="table table-hover">
+    <tr>
+        <th style="width:10%">No.</th>
+        <th style="width:75%">Key</th>
+        <th style="width:15%">Action</th>
+    </tr>
+    <%
+        if(keys != null){
+            keys.forEach(function(key, index){
+    %>
+    <tr>
+        <td><%= index + 1 %></td>
+        <td><%= key %></td>
+        <td>
+            <a href="/show/<%= key %>" class="btn btn-info">Show</a>&nbsp;
+            <a href="/remove/<%= key %>" class="btn btn-danger" onclick="return confirm('Are you sure to delete this item.');">Remove</a>
+        </td>
+    </tr>
+    <%
+        })
+    } %>
+</table>

@@ -1,0 +1,22 @@
+<h3>Redis Server List:</h3>
+<table class="table">
+    <tr>
+        <th style="width: 10%">IP</th>
+        <th style="width: 5%">Port</th>
+        <th style="width: 65%">Info</th>
+        <th style="width: 10">Keys</th>
+        <th style="width: 10%">Action</th>
+    </tr>
+
+    <% servers.forEach(function(item, index){ %>
+    <tr>
+        <td><%= item.ip %></td>
+        <td><%= item.port %></td>
+        <td><%= item.info %></td>
+        <td><%= item.dbSize %></td>
+        <td>
+            <a href="/manage/<%= item.port %>" class="btn btn-success">Manage</a>
+        </td>
+    </tr>
+    <% }) %>
+</table>
