@@ -28,6 +28,8 @@ function getServerInfo(callback){
                 console.log(Date.now() + " " + err);
                 count++;
 
+                client.quit();
+
                 if(count == setting.redis_ports.length * setting.redis_server.length)
                     callback(servers);
             });

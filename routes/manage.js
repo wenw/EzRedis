@@ -6,12 +6,15 @@ exports.list = function(req,res){
     var port = req.param("port");
     var keys = null;
 
-    req.session.port = port;
-    req.session.server = server;
+    res.cookie("port", port);
+    res.cookie("server", server);
 
     var client = redis.createClient(port, server);
 
     client.dbsize(function(err, count){
+
+        client.quit();
+
         res.render('manage', {
             title: 'Easy Redis Console',
             server: server,
@@ -26,8 +29,8 @@ exports.list = function(req,res){
 
 exports.search = function(req, res){
     var keyword = req.param("keyword");
-    var server = req.session.server;
-    var port = req.session.port;
+    var server = req.cookies["server"];
+    var port = req.cookies["port"];
 
     if(keyword != null){
         var client = redis.createClient(port, server);
@@ -49,8 +52,8 @@ exports.search = function(req, res){
 }
 
 exports.random = function(req, res){
-    var server = req.session.server;
-    var port = req.session.port;
+    var server = req.cookies["server"];
+    var port = req.cookies["port"];
     var keys = new Array();
     var count = 0;
 
@@ -61,10 +64,13 @@ exports.random = function(req, res){
 
             client.randomkey(function(err, key){
 
+                client.quit();
+
                 if(key != null)
                     keys.push(key);
 
                 if(count == 99){
+
                     res.render("manage", {
                         title : "Get 100 random keys - Easy Redis Console",
                         server : server,
@@ -83,20 +89,22 @@ exports.random = function(req, res){
 }
 
 exports.show = function(req,res){
-    var server = req.session["server"];
-    var port = req.session["port"];
+    var server = req.cookies["server"];
+    var port = req.cookies["port"];
     var key = req.param("key");
 
     var client = redis.createClient(port, server);
 
     client.type(key, function(err, type){
        if(type == "string"){
+
            client.get(req.param("key"), function(err, info){
                res.render("key",{
                    title:"Show item value",
                    key: req.param("key"),
                    value: info
                });
+
                client.quit();
            });
        }
@@ -133,8 +141,8 @@ exports.show = function(req,res){
 
 exports.remove = function(req, res){
     var client = getClient(req);
-    var server = req.session.server;
-    var port = req.session["port"];
+    var server = req.cookies["server"];
+    var port = req.cookies["port"];
     client.del(req.param("key"), function(err, info){
 
         client.quit();
@@ -146,7 +154,8 @@ exports.flushAll = function(req, res){
     var client = getClient(req);
 
     client.flushall(function(err,info){
-        res.redirect("/manage/" + req.session.server + "/" + req.session.port);
+        client.quit();
+        res.redirect("/manage/" + req.cookies["server"] + "/" + req.cookies["port"]);
     });
 }
 
@@ -154,7 +163,8 @@ exports.shutdown = function(req, res){
     var client = getClient(req);
 
     client.shutdown(function(err, info){
-        res.redirect("/manage/" + req.session.server + "/" + req.session.port);
+        client.quit();
+        res.redirect("/");
     })
 }
 
@@ -166,14 +176,15 @@ exports.listRemove = function(req, res){
         client.llen(key, function(err, count){
             if(count > 0){
                 client.lrange(key, 0, count, function(err, list){
+
+                    client.quit();
+
                     res.render("list", {
                         title: "Show list data",
                         key : key,
                         count : count,
                         list : list
                     });
-
-                    client.quit();
                 })
             }
 
@@ -182,8 +193,8 @@ exports.listRemove = function(req, res){
 }
 
 function getClient(req){
-    var server = req.session["server"];
-    var port = req.session["port"];
+    var server = req.cookies["server"];
+    var port = req.cookies["port"];
 
     return redis.createClient(port, server);
 }
