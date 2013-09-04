@@ -43,6 +43,8 @@ app.post("/search", manage.search);
 app.get("/search/random", manage.random);
 
 app.get('/show/:key', manage.show);
+app.get('/show/:key/:page', manage.show);
+
 
 app.get('/remove/:key', manage.remove);
 
@@ -51,6 +53,7 @@ app.get("/clear", manage.flushAll);
 app.get("/shutdown", manage.shutdown);
 
 app.get("/list/remove/:key/:index", manage.listRemove);
+
 
 if (cluster.isMaster) {
 
@@ -79,6 +82,14 @@ if (cluster.isMaster) {
         console.log('Express server listening on port ' + app.get('port'));
     });
 }
+
+
+/*
+//单进程模式，方便调试
+http.createServer(app).listen(app.get('port'), function(){
+    console.log('Express server listening on port ' + app.get('port'));
+});
+*/
 
 // 当主进程被终止时，关闭所有工作进程
 process.on('SIGTERM', function () {

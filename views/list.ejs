@@ -13,5 +13,23 @@
         <td><a href="/list/remove/<%= key %>/<%= index %>" class="btn btn-danger" onclick="return confirm('Are you sure to delete this record ?')">Remove</a></td>
     </tr>
     <% }); %>
+    <tr>
+        <td colspan="3">
+
+        </td>
+    </tr>
 
 </table>
+<div class="pagination pagination-centered">
+    <ul>
+        <li><a href="/show/<%= key %>/<%= minPage - 1 %>">Prev</a></li>
+        <% pages.forEach(function(item, index){ %>
+        <% if(item.currentPage == item.index){ %>
+        <li class="disabled"><a href="#"><%= item.index %></a></li>
+        <% } else {%>
+        <li><a href="/show/<%= key %>/<%= item.index %>"><%= item.index %></a></li>
+        <% }}) %>
+        <li><a href="/show/<%= key %>/<%= maxPage + 1 %>">Next</a></li>
+    </ul>
+</div>
+
