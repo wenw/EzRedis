@@ -25,15 +25,17 @@
     <file path="/index.ejs" changelist="709a5481-d4b0-426c-9cb0-4345ca1e1556" time="1377853666313" ignored="false" />
     <file path="/Item.ejs" changelist="709a5481-d4b0-426c-9cb0-4345ca1e1556" time="1376971417871" ignored="false" />
     <file path="/index.js" changelist="709a5481-d4b0-426c-9cb0-4345ca1e1556" time="1378020864971" ignored="false" />
-    <file path="/app.js" changelist="709a5481-d4b0-426c-9cb0-4345ca1e1556" time="1378199656078" ignored="false" />
-    <file path="/list.ejs" changelist="709a5481-d4b0-426c-9cb0-4345ca1e1556" time="1377941161286" ignored="false" />
-    <file path="/layout.ejs" changelist="709a5481-d4b0-426c-9cb0-4345ca1e1556" time="1377696795172" ignored="false" />
+    <file path="/app.js" changelist="709a5481-d4b0-426c-9cb0-4345ca1e1556" time="1378280943819" ignored="false" />
+    <file path="/list.ejs" changelist="709a5481-d4b0-426c-9cb0-4345ca1e1556" time="1378284695271" ignored="false" />
+    <file path="/layout.ejs" changelist="709a5481-d4b0-426c-9cb0-4345ca1e1556" time="1378280087546" ignored="false" />
     <file path="/show.ejs" changelist="709a5481-d4b0-426c-9cb0-4345ca1e1556" time="1376991957363" ignored="false" />
     <file path="/serverItem.ejs" changelist="709a5481-d4b0-426c-9cb0-4345ca1e1556" time="1376991571187" ignored="false" />
-    <file path="/manage.js" changelist="709a5481-d4b0-426c-9cb0-4345ca1e1556" time="1378200841276" ignored="false" />
+    <file path="/manage.js" changelist="709a5481-d4b0-426c-9cb0-4345ca1e1556" time="1378285098449" ignored="false" />
     <file path="/setting.js" changelist="709a5481-d4b0-426c-9cb0-4345ca1e1556" time="1377704579753" ignored="false" />
     <file path="/manage.ejs" changelist="709a5481-d4b0-426c-9cb0-4345ca1e1556" time="1377938549403" ignored="false" />
     <file path="/cluster.js" changelist="709a5481-d4b0-426c-9cb0-4345ca1e1556" time="1378198550818" ignored="false" />
+    <file path="/pager.ejs" changelist="709a5481-d4b0-426c-9cb0-4345ca1e1556" time="1378265916105" ignored="false" />
+    <file path="$USER_HOME$/Desktop/jquery-1.10.2.min.js" changelist="709a5481-d4b0-426c-9cb0-4345ca1e1556" time="1378284124399" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,34 +58,25 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="67" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0">
+            <state line="83" column="88" selection-start="2092" selection-end="2092" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.ejs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/index.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="20" selection-start="286" selection-end="286" vertical-scroll-proportion="-6.4">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.ejs" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/layout.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="61" selection-start="361" selection-end="361" vertical-scroll-proportion="0.3018868">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manage.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="manage.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/manage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="75" selection-start="276" selection-end="276" vertical-scroll-proportion="-7.68">
+            <state line="144" column="84" selection-start="3832" selection-end="3832" vertical-scroll-proportion="0.60453403">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.ejs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/layout.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="55" selection-start="1154" selection-end="1154" vertical-scroll-proportion="-10.4">
               <folding />
             </state>
           </provider>
@@ -101,7 +94,7 @@
       <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="133" selection-start="1459" selection-end="1459" vertical-scroll-proportion="0.0">
+            <state line="56" column="0" selection-start="1459" selection-end="1459" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -119,7 +112,7 @@
       <file leaf-file-name="list.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/list.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="44" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
+            <state line="24" column="77" selection-start="721" selection-end="721" vertical-scroll-proportion="-7.32">
               <folding />
             </state>
           </provider>
@@ -135,22 +128,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/node_modules/redis/index.js" />
         <option value="$PROJECT_DIR$/counter.js" />
         <option value="$PROJECT_DIR$/views/Item.ejs" />
         <option value="$PROJECT_DIR$/views/serverItem.ejs" />
         <option value="$PROJECT_DIR$/views/show.ejs" />
         <option value="$PROJECT_DIR$/views/keys.ejs" />
         <option value="$PROJECT_DIR$/views/manage.ejs" />
-        <option value="$PROJECT_DIR$/views/list.ejs" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/cluster.js" />
         <option value="$PROJECT_DIR$/node_modules/modules/setting.js" />
+        <option value="$PROJECT_DIR$/views/index.ejs" />
+        <option value="$PROJECT_DIR$/views/pager.js" />
+        <option value="$PROJECT_DIR$/views/pager.ejs" />
+        <option value="$PROJECT_DIR$/views/layout.ejs" />
+        <option value="$PROJECT_DIR$/views/list.ejs" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/manage.js" />
-        <option value="$PROJECT_DIR$/views/index.ejs" />
-        <option value="$PROJECT_DIR$/views/layout.ejs" />
       </list>
     </option>
   </component>
@@ -242,6 +235,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RedisConsole" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EzRedis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RedisConsole" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EzRedis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RedisConsole" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EzRedis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="node_modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -272,16 +315,18 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app.js" />
+    <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app.js" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Source\EzRedis\public\js" />
+      <recent name="D:\Source\EzRedis\public" />
       <recent name="C:\Users\Steven\redis\public\js" />
     </key>
   </component>
@@ -301,6 +346,10 @@
       <option name="testName" />
       <method />
     </configuration>
+    <configuration default="true" type="NodeJSRemoteDebug" factoryName="Node.js Remote Debug">
+      <node-js-remote-debug local-path="$PROJECT_DIR$" />
+      <method />
+    </configuration>
     <configuration default="true" type="NodeunitConfigurationType" factoryName="Nodeunit">
       <setting name="nodePath" value="C:/Program Files/nodejs/node" />
       <envs />
@@ -311,8 +360,7 @@
       <setting name="jsFile" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="NodeJSRemoteDebug" factoryName="Node.js Remote Debug">
-      <node-js-remote-debug local-path="$PROJECT_DIR$" />
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="app.js" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
     <configuration default="true" type="XSLT" factoryName="XSLT">
@@ -329,9 +377,6 @@
       <OutputType value="CONSOLE" save-to-file="false" />
       <FileType name="XML" />
       <JdkChoice value="FROM_MODULE" />
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="app.js" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
@@ -383,11 +428,11 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17721519" sideWeight="0.6597938" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17721519" sideWeight="0.72852236" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37457046" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34020618" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27147767" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -457,20 +502,22 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/manage.js</url>
+          <line>145</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/manage.js</url>
+          <line>114</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="12" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/js/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.WebStorm6/system/extLibs/nodejs-v0.10.15-src/core-modules-sources/lib/net.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="0" selection-start="2691" selection-end="2691" vertical-scroll-proportion="0.17260274" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="142" column="0" selection-start="3020" selection-end="3020" vertical-scroll-proportion="0.11310592" />
@@ -498,13 +545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/list.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="44" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/modules/setting.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="33" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
@@ -514,42 +554,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/manage.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="63" selection-start="851" selection-end="851" vertical-scroll-proportion="0.31914893">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="67" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="16" column="63" selection-start="851" selection-end="851" vertical-scroll-proportion="0.31914893" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="133" selection-start="1459" selection-end="1459" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/manage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="75" selection-start="276" selection-end="276" vertical-scroll-proportion="-7.68">
+        <state line="56" column="0" selection-start="1459" selection-end="1459" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="20" selection-start="286" selection-end="286" vertical-scroll-proportion="-6.4">
+        <state line="10" column="20" selection-start="286" selection-end="286" vertical-scroll-proportion="0.3018868">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/pager.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/layout.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="61" selection-start="361" selection-end="361" vertical-scroll-proportion="0.3018868">
+        <state line="38" column="55" selection-start="1154" selection-end="1154" vertical-scroll-proportion="-10.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/list.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="77" selection-start="721" selection-end="721" vertical-scroll-proportion="-7.32">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="88" selection-start="2092" selection-end="2092" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/manage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="144" column="84" selection-start="3832" selection-end="3832" vertical-scroll-proportion="0.60453403">
           <folding />
         </state>
       </provider>

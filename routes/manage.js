@@ -111,16 +111,51 @@ exports.show = function(req,res){
         else if(type == "list"){
            client.llen(key, function(err, count){
                if(count > 0){
-                   client.lrange(key, 0, count, function(err, list){
-                        res.render("list", {
-                            title: "Show list data",
-                            key : key,
-                            count : count,
-                            list : list
-                        });
+
+                   var pageCount = count % 50 != 0 ? count / 50 + 1 : count / 50;
+
+                   var pages = new Array();
+                   var page = req.param("page");
+
+                   if(page == null){
+                        page = 1;
+                   } else if (Number(page) < 1){
+                        page = 1;
+                   } else if(Number(page) > pageCount){
+                        page = pageCount;
+                   } else {
+                       page = Number(req.param("page"));
+                   }
+
+                   if(pageCount > 1){
+                       var endPage = page + 10;
+                       for(var i=page; i<= endPage; i++){
+                           if(i > pageCount)
+                            break;
+
+                           pages.push({ currentPage: page, index:i });
+                       }
+                   } else {
+                       pages.push({ currentPage: Number(page), index: Number(page)});
+                   }
+
+                   var startIndex = page * 50 - 50;
+                   var endIndex = page * 50 - 1;
+
+                   client.lrange(key, startIndex, endIndex, function(err, list){
+                       res.render("list", {
+                           title: "Show list data",
+                           key : key,
+                           count : count,
+                           list : list,
+                           pages : pages,
+                           minPage: page - 9 > 0 ? page - 9 : 1,
+                           maxPage: page + 10 > pageCount ? pageCount - page : page + 10
+                       });
 
                        client.quit();
                    })
+
                }
 
            });
